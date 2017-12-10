@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>inVR editing</title>
+    <meta name="description" content="invr editing">
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
+    <script src="aframe-invr-inspect.js"></script>
+  </head>
+  <body>
+    <a-scene selfinspect>
+      
+      <a-entity camera look-controls position="0 1.8 0">
+        <a-entity cursor="fuse: true; fuseTimeout: 500; rayOrigin: mouse;"
+                  position="0 0 -1"
+                  geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+                  material="color: black; shader: flat">
+        </a-entity>
+      </a-entity>
+    
+      <!-- for 6DoF -->
+      <a-sphere visible="false" snapping-zone position="0 1 -1" scale="0.5 0.5 0.5" opacity="0.5" ></a-sphere>
+      
+      <a-text value="Scratch Blocks in 3D for in VR programming"
+              color="black" position="-2 3 -4"></a-text>
+      
+      <a-text value="events" color="black" position="0 2 -3"></a-text>
+      
+	<!-- not needed anymore
+      <a-box snappable class="entity" position="-3 0.5 -5" opacity="0.3" width="4">
+        <a-text value="a-box (entity)" position="-1 0 0.51"></a-text>
+        <a-sphere position="0 0.5 0" scale="1 0.5 0.5" color="orange" ></a-sphere>
+        <a-box position="0 0 0" width="4" color="orange" ></a-box>
+        <a-box position="-0.5 -0.2 0" width="1" color="orange" ></a-box>
+      </a-box>
+      
+      <a-box snappable class="component" position="3 0.5 -5" opacity="0.3" width="4">
+        <a-text value="color (component)" position="-1 0 0.51"></a-text>
+        <a-box position="-1.5 0.4 0" width="1" color="orange" height="0.4"></a-box>
+        <a-box position="1 0.4 0" width="2" color="orange" height="0.4"></a-box>
+        <a-box position="0 0 0" width="4" color="orange" height="0.6"></a-box>
+        <a-box position="-0.5 -0.2 0" width="1" color="orange" ></a-box>
+      </a-box>
+	-->
+      
+      <a-entity id="stack" position="-8 2 -5"></a-entity>
+      <a-entity id="result" position="-8 6 -5"></a-entity>
+      
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>
