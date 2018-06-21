@@ -1,5 +1,7 @@
 # aframe-inVR-blocks-based-editor
 
+![preview](https://pbs.twimg.com/media/DRCJD77UMAARiwi.jpg)
+
 Binding done earlier via http://jsbin.com/riyiwut/edit?html,output 
       
 earlier exploration https://twitter.com/utopiah/status/936546139331055616
